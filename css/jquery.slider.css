@@ -1,0 +1,42 @@
+/*可视窗口*/
+.view{
+	width:200px;
+	height: 200px;
+	border: 1px solid #aaa;
+	position: relative;
+}
+
+/* 滚动列表 */
+.list{width: 1400px; border: 1px solid #f00; overflow: hidden; /*margin-left:-200px;*/ position: absolute; left:-200px;}
+.list li{
+	float:left;
+	width:200px;
+	font-weight: bold;
+	font-size: 68px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	height: 200px;
+	line-height: 200px;
+}
+
+/* 按钮样式 */
+.prev-btn, .next-btn{
+	width:20px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	position: absolute;
+	top:50%;
+	margin-top:-15px;
+	border: 1px solid #ccc;
+	background-color: #ddd;
+	text-decoration: none;
+	z-index: 1;
+}
+.prev-btn:hover, .next-btn:hover{
+	border-color: blue;
+}
+.prev-btn{left:10px;}
+.next-btn{right: 10px;}
+
