@@ -7,8 +7,19 @@
 	<link rel="stylesheet" href="css/jquery.slider.css"/>
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.slider.js"></script>
+	<!--
+		第一步：布局基本的html结构
+		第二步：绑定左右按钮事件并添加动画，注意锁(lock变量的使用)
+		第三步：绑定mousemove事件，支持鼠标滑动
+		第四步：添加左右循环；
 
-
+		第五步：封装jquery插件，ul.list宽度改成js计算。
+	-->
+	<style>
+		.G_layer{
+			/* 此类名为测试所用，组件从view开始 */
+		}
+	</style>
 </head>
 <body>
 	<div id="G_layer" style="position:absolute; left:30%;">
@@ -16,11 +27,11 @@
 			<a href="javascript:;" class="prev-btn">&lt;</a>
 			<a href="javascript:;" class="next-btn">&gt;</a>
 			<ul class="list">
-				<li>E</li><li>A</li>
+				<li>A</li>
 				<li>B</li>
 				<li>C</li>
 				<li>D</li>
-				<li>E</li><li>A</li>
+				<li>E</li>
 			</ul>
 		</div>
 	</div>
